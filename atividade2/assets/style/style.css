@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+
+    transition: all 0.4s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+body {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#tb-inf {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #daeeffcc;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td {
+    color: #00416b;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(141, 140, 140);
+}
+
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: aliceblue;
+}
+
+label {
+    font-weight: 500;
+    color: #00416b;
+}
+
+#seletor {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #d8ecfc6c;
+}
+ 
+
+option {
+    background-color: #d8ecfc6c;
+
+}
+
+
+#informacao {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensagem {
+    width: 80%;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: left;
+    min-width: 60%;
+}
+
+@media screen and (max-width: 400px) {
+
+    table {
+        width: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #mensagem {
+        width: 100%;
+    }
+}

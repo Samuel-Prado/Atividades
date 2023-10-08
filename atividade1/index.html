@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultador de CEP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/atividade1/assets/style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/atividade1/assets/js/js.js">
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Consultador de CEP</h1>
+    <div id="tb-inf">
+        <form id="form">
+            <div class="sub-form">
+                <label for="texto">
+                    CEP
+                </label>
+                <input id="texto" type="text" placeholder="XXXXXXXX" name="texto" pattern="[0-9]{8}" maxlength="8"
+                    required>
+            </div>
+            <div class="sub-form">
+               <button type="submit" id="btn"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+        </form>
+        <div id="informacao">
+            <span id="mensagem"></span>
+            <table>
+                <tr>
+                    <td>Logradouro:</td>
+                    <td id="log"></td>
+                </tr>
+                <tr>
+                    <td>Complemento:</td>
+                    <td id="comp"></td>
+                </tr>
+                <tr>
+                    <td>Bairro:</td>
+                    <td id="bai"></td>
+                </tr>
+                <tr>
+                    <td>Localidade:</td>
+                    <td id="loc"></td>
+                </tr>
+                <tr>
+                    <td>UF:</td>
+                    <td id="uf"></td>
+                </tr>
+            </table>
+        </div>
+        <button id="btn-clear" type="button">LIMPAR <i class="fa-solid fa-trash-can"></i></button>
+    </div>
+</body>
+
+</html>

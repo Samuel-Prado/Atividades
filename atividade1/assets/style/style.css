@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+
+    transition: all 0.4s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#tb-inf {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #daeeffcc;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td {
+    color: #00416b;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(141, 140, 140);
+}
+
+#log,
+#comp,
+#bai,
+#loc,
+#uf {
+    color: #000;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    background-color: aliceblue;
+}
+
+label {
+    width: 10%;
+    font-weight: 500;
+    color: #00416b;
+}
+
+#texto {
+    width: 83%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #d8ecfc6c;
+}
+
+button[type="button"],
+button[type="submit"] {
+    border: none;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#btn-clear:hover {
+    background-color: #a0d1ee;
+}
+
+#btn {
+    width: 0;
+    background-color: transparent;
+    padding: 5px;
+}
+
+#btn-clear {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #99dbff;
+    width: 30%;
+    margin-left: 10.5%;
+}
+#btn-clear i{
+    position: relative;
+    padding-left: 12px;
+}
+#btn-clear i::after{
+    content: " ";
+    height: 40px;
+    width: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-radius: 8px;
+}
+i {
+    font-size: 20px;
+}
+#informacao {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensagem {
+    width: 80%;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: left;
+    min-width: 60%;
+}
+
+@media screen and (max-width: 400px) {
+    #btn-clear {
+        width: 94%; 
+        margin-left: 3%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #form { 
+        width: 100%;
+    }
+
+    #btn {
+        width: 0;
+    }
+
+    #mensagem {
+        width: 100%;
+    }
+ 
+}
