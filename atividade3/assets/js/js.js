@@ -34,9 +34,11 @@ $(document).ready(() => {
                 $("#mensagem").css("background-color", "#b7d5ac")
                 $("#mensagem").html("Os dados solicitados estão disponíveis a seguir.")
 
+                cidade.sort((a, b) => a.nome.localeCompare(b.nome));
+
                 let text = "";
-                for (let i = 0; i < cidade.length; i++) {                
-                        text += `
+                for (let i = 0; i < cidade.length; i++) {
+                    text += `
                         <tr>
                             <td>${cidade[i].nome}</td>
                         </tr>`
